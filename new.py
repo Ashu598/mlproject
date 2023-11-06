@@ -21,7 +21,7 @@ similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 st.title("Search similar talent")
 
-option = st.selectbox('What's your requirement???', profile_['Position'].values)
+option = st.selectbox('What is your requirement???', profile_['Position'].values)
 
 if st.button('Recommend Profiles'):
     recommendations = recommend(option)
