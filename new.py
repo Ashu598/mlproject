@@ -17,7 +17,7 @@ def recommend(profile):
 import pickle
 profile_dict = pickle.load(open('profile_dict.pkl', 'rb'))
 profile_ = pd.DataFrame(profile_dict)
-similarity = pickle.load(open('C:\\Users\\Administrator\\similarity.pkl', 'rb'))
+similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 st.title("My Resumes")
 
