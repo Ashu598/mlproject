@@ -15,7 +15,7 @@ def recommend(profile):
 
 
 import pickle
-profile_dict = pickle.load(open('C:\\Users\\Administrator\\profile_dict.pkl', 'rb'))
+profile_dict = pickle.load(open('C:\Users\Administrator\profile_dict.pkl', 'rb'))
 profile_ = pd.DataFrame(profile_dict)
 similarity = pickle.load(open('C:\\Users\\Administrator\\similarity.pkl', 'rb'))
 
