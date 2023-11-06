@@ -19,9 +19,9 @@ profile_dict = pickle.load(open('profile_dict.pkl', 'rb'))
 profile_ = pd.DataFrame(profile_dict)
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
-st.title("My Resumes")
+st.title("Search similar talent")
 
-option = st.selectbox('Job profiles', profile_['Position'].values)
+option = st.selectbox('What's your requirement???', profile_['Position'].values)
 
 if st.button('Recommend Profiles'):
     recommendations = recommend(option)
